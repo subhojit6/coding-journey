@@ -1,77 +1,82 @@
-# Two Sum
+# DSA Problem: Two Sum
 
-## 1. Problem Information
+## Problem
 
-**Platform:** LeetCode  
-**Topic:** Arrays and Hashing  
-**Status:** Solved; needs revision
+Given a list of integers and a target value, return the indices of two different elements whose sum equals the target.
 
-## 2. Understand the Problem
+Example:
 
-Given a list of integers and a target, find the indices of two different elements whose values add up to the target.
+```python
+nums = [2, 7, 11, 15]
+target = 9
+```
 
-**Example:**
+Expected result:
 
-Input: `nums = [2, 7, 11, 15]`, `target = 9`
+```python
+[0, 1]
+```
 
-Output: `[0, 1]`
+Because `nums[0] + nums[1] == 9`.
 
-Because `nums[0] + nums[1] = 2 + 7 = 9`.
+## Approach 1: Brute Force
 
-## 3. My First Thought
+### Idea
 
-**Approach:** Brute force using nested loops.
+Check every possible pair of elements using nested loops.
 
-Check pairs of elements until a pair adds up to the target.
+### What I Learned
 
-**What I learned:** The straightforward solution is a useful starting point, even if it isn't the most efficient.
+- List indices identify element positions.
+- The inner loop can start at `i + 1` to avoid pairing an element with itself or checking the same pair twice.
+- A straightforward solution helps establish the logic before optimizing.
 
-## 4. Brute-Force Solution
+### Complexity
 
-**Time complexity:** O(n²)  
-**Extra space complexity:** O(1), excluding the returned answer.
+- Time: O(n²)
+- Auxiliary space: O(1), excluding the returned result.
 
-**Why is it inefficient?**
+## Approach 2: Dictionary / Hashing
 
-The nested loops may check many pairs, resulting in quadratic time complexity.
+### Idea
 
-## 5. Improved Solution
+For each number, calculate the value needed to reach the target.
 
-**Technique:** Hash map / dictionary.
+```python
+complement = target - nums[i]
+```
 
-For each number:
-1. Calculate the complement: `target - current_number`.
-2. Check whether that complement is already in the dictionary.
-3. If found, return the two indices.
-4. Otherwise, store the current number and its index.
+Check whether that complement has already been stored in a dictionary. If it has, the two indices have been found. Otherwise, store the current number and its index.
 
-**Time complexity:** O(n) average  
-**Extra space complexity:** O(n)
+### Example
 
-**Why is it better?**
+For `nums = [2, 7, 11, 15]` and `target = 9`:
 
-The dictionary lets me check whether the required complement has already appeared without scanning the entire list again.
+1. Visit `2`; its complement is `7`. It has not been seen, so store `2`.
+2. Visit `7`; its complement is `2`. The dictionary already contains `2`.
+3. Return the indices of `2` and `7`: `[0, 1]`.
 
-## 6. Mistakes and Lessons
+### Complexity
 
-**Important distinction:** This solution uses hashing, not binary search.
+- Average time: O(n)
+- Extra space: O(n)
 
-**Key lesson:** When looking for a pair that adds up to a target, consider whether remembering previously seen values can avoid repeated searching.
+## Technique
 
-## 7. Final Understanding
+Hashing with a dictionary.
 
-I first tried nested loops. Then I learned how a dictionary can store previously visited numbers and their indices.
+## Main Lesson
 
-I should be able to explain why the complement is calculated as `target - current_number` and why the dictionary improves the average time complexity.
+Instead of repeatedly searching the list for the complement, store previously seen values so they can be looked up efficiently.
 
-## 8. Revision Tracker
+## What I Need to Practice
 
-- [ ] Solve Two Sum again without notes
-- [ ] Explain the dictionary approach aloud
-- [ ] Review after 3 days
-- [ ] Review after 7 days
-- [ ] Review after 14 days
+- Write the dictionary solution without looking at previous code.
+- Explain why the complement is `target - current_number`.
+- Understand why checking before storing the current number prevents using the same element twice.
+- Test negative numbers, repeated values, and cases where no valid pair exists.
+- Follow the problem's required behavior when no solution exists.
 
-## 9. Key Takeaway
+## Status
 
-Brute force helps me find a working approach. Hashing can help me avoid repeating work.
+Practiced both brute force and dictionary-based approaches. Continue practicing until I can independently implement and explain the optimized solution.

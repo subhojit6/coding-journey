@@ -1,45 +1,44 @@
-My Coding Journey 🚀
+# My Coding Journey
 
-Welcome to my developer learning journey!
+I'm an MCA 2026 fresher working toward becoming job-ready for entry-level software development roles.
 
-I'm working toward becoming a job-ready software developer by learning programming fundamentals, solving problems, building projects, and practicing consistently.
+This repository documents my learning progress, programming practice, DSA problems, projects, mistakes, and lessons learned.
 
-🎯 My Goals
+My goal is to build strong fundamentals and learn to solve problems independently rather than simply copy solutions.
 
-Strengthen my Python fundamentals
+## Current Focus
 
-Learn Data Structures and Algorithms (DSA)
+- Python programming and problem-solving
+- Data Structures and Algorithms using Python
+- Time and space complexity
+- Git and GitHub
+- Building practical Python projects
+- Preparing for entry-level software development opportunities
 
-Build real-world projects
+## What I've Learned So Far
 
-Learn Git and GitHub
+### Python
 
-Develop SQL and backend development skills
+- Variables and basic data types
+- Conditional statements
+- `for` and `while` loops
+- Functions
+- Lists, tuples, sets, and dictionaries
+- String operations
+- Exception handling with `try` and `except`
+- Basic file handling
+- Initial practice with modules, imports, and object-oriented programming
 
-Prepare for software engineering interviews
+### Data Structures and Algorithms
 
-📚 What I'm Learning
-
-Python
-
-Data Structures and Algorithms
-
-Object-Oriented Programming
-
-Git and GitHub
-
-SQL and backend development
-
-🛠️ Projects
-
-Finance Manager — a Python application for tracking income and expenses
-
-📈 Progress
-
-I track my daily learning, concepts, problem-solving practice, and project milestones in this repository.
-
-💡 My Rule
-
-Understand the concept, practice it independently, build something with it, and revise it until I can use it without help.
-
-Consistency over perfection. Progress over endless preparation.
+- Time complexity: O(1), O(n), and O(n²)
+- Basic space complexity
+- Array traversal and linear search
+- Binary search on sorted arrays
+- Finding the largest, smallest, and maximum-minus-minimum values
+- Two Sum using brute force and dictionaries
+- Duplicate detection using sets
+- Single Number using brute force and frequency counting
+- Move Zeroes using in-place modification
+- Missing Number using sets and a mathematical formula
+- Second-largest distinct element —
