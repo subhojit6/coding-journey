@@ -229,15 +229,18 @@ Complexity:
 Key lesson: because the array is sorted, duplicate values appear next to one another.
 
 ### LeetCode #88 — Merge Sorted Array
+**Status:** Completed
 
-**Status:** In progress
+- Practiced merging two sorted arrays from the end.
+- Used three pointers: `i`, `j`, and `k`.
+- Used backward traversal to avoid overwriting unprocessed values.
+- Completed the merge logic, including handling remaining elements.
 
-- Practiced merging sorted arrays from the end.
-- Worked with the destination pointer `k = m + n - 1`.
-- Corrected the loop condition to continue while `j >= 0`.
-- Still need to finish handling the case where the first array's valid elements are exhausted.
+**Complexity:**
+- Time: O(m + n)
+- Extra space: O(1)
 
-Key lesson: merging backward helps avoid overwriting unprocessed values in the destination array.
+**Key lesson:** When merging backward, continue copying any remaining elements from the second array if the first array's valid elements are exhausted.
 
 ### Techniques Added to My Practice
 
