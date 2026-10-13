@@ -198,3 +198,58 @@ Next: complete the solution independently and explain why it works.
 ## Learning Rule
 
 Do not mark a problem as mastered just because a solution works once. Re-solve it without looking at the previous code and explain the technique, complexity, and edge cases.
+
+## Progress Update — October 13, 2026
+
+### LeetCode #283 — Move Zeroes
+
+**Status:** Revisited and practiced
+
+- Practiced moving non-zero values forward with a write pointer.
+- Used a second pass to fill remaining positions with zeroes.
+- Debugged a problem caused by modifying a list while iterating over it.
+- Reinforced the difference between in-place modification and creating a new list.
+
+Complexity:
+- Time: O(n)
+- Extra space: O(1)
+
+### LeetCode #26 — Remove Duplicates from Sorted Array
+
+**Status:** Solved and practiced
+
+- Used two pointers to process a sorted array.
+- Used a write pointer to place distinct values in the front portion of the array.
+- Practiced modifying an array in place.
+
+Complexity:
+- Time: O(n)
+- Extra space: O(1)
+
+Key lesson: because the array is sorted, duplicate values appear next to one another.
+
+### LeetCode #88 — Merge Sorted Array
+
+**Status:** In progress
+
+- Practiced merging sorted arrays from the end.
+- Worked with the destination pointer `k = m + n - 1`.
+- Corrected the loop condition to continue while `j >= 0`.
+- Still need to finish handling the case where the first array's valid elements are exhausted.
+
+Key lesson: merging backward helps avoid overwriting unprocessed values in the destination array.
+
+### Techniques Added to My Practice
+
+- Two pointers.
+- Write pointers.
+- Backward traversal.
+- In-place array modification.
+- Debugging pointer boundaries and loop conditions.
+
+### Next DSA Priority
+
+1. Finish Merge Sorted Array.
+2. Test edge cases and explain the pointer movements.
+3. Continue practicing array problems using two pointers.
+4. Record time and extra-space complexity for each solution.
