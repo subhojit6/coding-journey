@@ -256,3 +256,166 @@ Key lesson: because the array is sorted, duplicate values appear next to one ano
 2. Test edge cases and explain the pointer movements.
 3. Continue practicing array problems using two pointers.
 4. Record time and extra-space complexity for each solution.
+
+# DSA Progress Update — October 22, 2026
+
+## 1. Time and Space Complexity
+
+### Concepts Studied
+- O(1): constant time or auxiliary space.
+- O(log n): logarithmic time, including binary search.
+- O(n): linear time and auxiliary space.
+- O(n log n): encountered when analysing sorting approaches.
+- O(n²): quadratic time, commonly associated with nested loops.
+- Time complexity versus auxiliary space complexity.
+- In-place modification versus creating an additional collection.
+- Best-case and worst-case time complexity.
+
+### Important Lessons
+- Sequential O(n) loops generally combine to O(n), not O(n²).
+- A fixed number of variables requires O(1) auxiliary space.
+- An additional list that grows with the input requires O(n) auxiliary space.
+- Complexity analysis should account for the actual operations and additional memory used.
+
+## 2. Arrays and Array Traversal
+
+### Concepts Practised
+- Iterating through arrays and Python lists.
+- Tracking minimum and maximum values.
+- Tracking the second-largest distinct value.
+- Using read and write pointers.
+- Modifying arrays in place.
+- Traversing arrays from either direction.
+- Recognising mathematical shortcuts that avoid unnecessary comparisons.
+
+### Problems Practised
+- Find the largest element.
+- Find the second-largest distinct element.
+- Find the largest difference between two numbers.
+- Move Zeroes (#283).
+- Remove Duplicates from Sorted Array (#26).
+- Merge Sorted Array (#88).
+- Squares of a Sorted Array (#977).
+- Remove Element (#27).
+
+### Key Lessons
+- A single traversal can maintain useful information such as a minimum, maximum, or candidate.
+- Sorted arrays provide useful properties for detecting duplicates and comparing values.
+- A write pointer identifies where the next valid value should be stored.
+- Backward traversal can prevent overwriting values that have not yet been processed.
+
+## 3. Hashing, Sets, and Dictionaries
+
+### Concepts Studied
+- Set membership and duplicate detection.
+- Dictionary key-value pairs.
+- Hashing and the role of hash values in lookup.
+- Frequency counting with dictionaries.
+- Storing previously seen values.
+- Using dictionaries to associate values with indices.
+- Set intersection and deduplication.
+- XOR cancellation for finding a unique element.
+- Recognising when hashing can eliminate repeated searching.
+
+### Problems Practised
+- Contains Duplicate (#217).
+- Two Sum (#1).
+- Single Number (#136).
+- Intersection of Two Arrays (#349).
+- Majority Element (#169).
+- Ransom Note (#383).
+
+### Key Lessons
+- Use a set when the main question is whether a value has been seen.
+- Use a dictionary when a value needs associated information, such as an index or frequency.
+- Frequency counting can replace repeated scans of an array.
+- Set operations can simplify intersection problems.
+- XOR has the property that equal values cancel when XORed together.
+- A candidate produced by an algorithm is not automatically a valid answer unless the problem's assumptions guarantee it.
+
+### Status Notes
+- Intersection of Two Arrays (#349): completed using sets.
+- Majority Element (#169): practised candidate tracking and reasoning about the majority guarantee.
+- Ransom Note (#383): introduced; completion still needs to be confirmed.
+
+## 4. Two Pointers and In-Place Techniques
+
+### Concepts Studied
+- Left and right pointers.
+- Read and write pointers.
+- Moving pointers based on comparisons.
+- Filling an output array from right to left.
+- Using sorted-array properties to reduce unnecessary comparisons.
+- Understanding the role of each pointer rather than memorising pointer movements.
+
+### Problems Practised
+- Remove Duplicates from Sorted Array (#26).
+- Merge Sorted Array (#88).
+- Squares of a Sorted Array (#977).
+- Two Sum II — Input Array Is Sorted (#167).
+- Valid Palindrome (#125).
+
+### Status Notes
+- Merge Sorted Array (#88): completed.
+- Squares of a Sorted Array (#977): completed using two pointers and a separate result array.
+- Two Sum II (#167): practice started; completion needs confirmation.
+- Valid Palindrome (#125): working toward a two-pointer solution that skips non-alphanumeric characters without constructing a cleaned string.
+
+## 5. Searching and Sorting
+
+### Concepts Studied
+- Linear search.
+- Binary search on sorted data.
+- How binary search repeatedly reduces the search space.
+- Comparing sorting-based approaches with set-based approaches.
+- Recognising the time cost of sorting before scanning.
+
+### Key Lesson
+The appropriate approach depends on the input properties and the required output. Sorting, hashing, and pointer-based techniques have different time and space trade-offs.
+
+## 6. Prefix Sums and Sliding Windows
+
+### Concepts Studied
+- Prefix sums as a way to store cumulative totals.
+- Fixed-size sliding windows as a way to process consecutive groups of elements.
+- The importance of understanding a technique before using it in a solution.
+
+### Practice Candidates
+- Range Sum Query — Immutable (#303).
+- Maximum Average Subarray I (#643).
+
+**Status:** Concepts introduced for practice. Individual problem completion should be recorded only after verifying the work.
+
+## 7. Other Problem-Solving Techniques
+
+### Mathematical Reasoning
+For the largest-difference problem, recognised that the largest possible difference is the maximum value minus the minimum value. This avoids comparing every possible pair.
+
+### Majority Candidate Tracking
+Practised reasoning about a candidate for the majority element and why a candidate must be verified when the problem does not guarantee that a majority exists.
+
+### General Problem-Solving Process
+1. Understand what the problem asks.
+2. Work through a small example manually.
+3. Consider a straightforward solution.
+4. Analyse its time and auxiliary space.
+5. Identify repeated work or unnecessary operations.
+6. Consider an appropriate optimisation.
+7. Implement, test, and explain the solution.
+
+## 8. Current Revision Priorities
+
+- Strengthen auxiliary-space analysis.
+- Practise dictionary frequency counting.
+- Revisit two-pointer boundary conditions.
+- Finish and verify unfinished problem attempts.
+- Practise explaining the reasoning behind pointer movements.
+- Revisit older problems periodically instead of restarting the entire DSA roadmap.
+
+## 9. Documentation Rule
+
+A problem should be marked **Completed** only when its solution has been implemented and tested sufficiently to support that status.
+
+A topic being introduced or assigned for practice does not mean it has been mastered.
+
+The objective is to build independent problem-solving ability, not simply to accumulate solved-problem counts.

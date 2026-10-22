@@ -89,80 +89,165 @@ Static methods using @staticmethod.
 
 Understand the basic differences in their purposes.
 
-4. Encapsulation
+## 4. Functions
 
-Understand the purpose of encapsulation.
+**Status:** Practiced; needs more independent practice
 
-Practised properties and controlled access to attributes.
+What I've worked on:
+- Defining and calling functions.
+- Using functions to organize reusable code.
+- Applying functions while solving programming problems.
 
-5. Inheritance
+Practice next:
+- Strengthen independent function design.
+- Practise parameters, arguments, and return values.
+- Break larger problems into smaller functions.
 
-Understand how a child class can reuse functionality from a parent class.
+## 5. Data Structures and Collections
 
-Practised method overriding.
+**Status:** Practiced; continue reinforcing through problems
 
-Learned the purpose of super().
+What I've worked on:
+- Lists, tuples, sets, and dictionaries.
+- Iterating through collections.
+- Using sets to track unique values and check membership.
+- Using dictionaries to store counts, indices, and associated values.
+- Working with strings and common string methods.
 
-6. Polymorphism and Abstraction
+Practice next:
+- Choose appropriate data structures for different problems.
+- Understand mutable and immutable objects.
+- Continue practising collection operations independently.
 
-Understand the basic purpose of polymorphism.
+## 6. Exception Handling and File Handling
 
-Understand abstraction as a way to expose essential behaviour while hiding implementation details.
+**Status:** Practiced
 
-7. Object Relationships
+What I've worked on:
+- Using `try` and `except` to handle errors.
+- Handling invalid input, including `ValueError`.
+- Reading and writing files.
+- Applying file handling in beginner projects.
 
-Composition.
+Practice next:
+- Handle expected errors appropriately.
+- Understand when to raise exceptions.
+- Improve error handling in practical applications.
 
-Aggregation.
+## 7. Modules and Project Organization
 
-Dependency injection.
+**Status:** Introduced through practical work
 
-Understand the basic differences and why these relationships matter when designing classes.
+What I've worked on:
+- Organizing Python code into files.
+- Using modules and imports.
+- Exploring project folders and separating responsibilities.
+- Working with `.gitignore` and a virtual environment during project development.
 
-8. Object Representation
+Practice next:
+- Improve module organization.
+- Understand when code belongs in a separate module.
+- Organize larger projects without unnecessary complexity.
 
-Explored __str__() and __repr__() for representing objects.
+## 8. Object-Oriented Programming (OOP)
 
-Also practised __len__() and __eq__().
+**Status:** Foundations covered; independent application still needs practice.
 
-Practical Work
+### Concepts Covered
 
-Independently created a Student class.
+**Classes and objects**
+- Understand the purpose of classes and objects.
+- Practised creating a class and instantiating objects.
+- Learned how objects represent individual instances of a class.
 
-Used __init__() to initialize instance data.
+**Constructors and instance data**
+- `__init__()` initializes an object's state.
+- `self` refers to the current instance.
+- Instance attributes store data associated with individual objects.
+- Instance methods operate on object data.
 
-Created an instance method named introduce().
+**Method types**
+- Instance methods.
+- Class methods using `@classmethod`.
+- Static methods using `@staticmethod`.
+- Basic differences in their purposes.
 
-Created an object and called its method.
+**Encapsulation**
+- Understand the purpose of encapsulation.
+- Practised properties and controlled access to attributes.
 
-Identified an improvement: store the student's age as an instance attribute rather than hardcoding it.
+**Inheritance**
+- Understand how a child class can reuse functionality from a parent class.
+- Practised method overriding.
+- Learned the purpose of `super()`.
 
-Current Assessment
+**Polymorphism and abstraction**
+- Understand the basic purpose of polymorphism.
+- Understand abstraction as a way to expose essential behaviour while hiding implementation details.
 
-Status: OOP foundations covered; independent application still needs practice.
+**Object relationships**
+- Composition.
+- Aggregation.
+- Dependency injection.
+- Understand their basic differences and why these relationships matter when designing classes.
 
-The goal is to use OOP confidently in practical Python applications, not to master every special method.
+**Object representation and special methods**
+- Explored `__str__()` and `__repr__()` for representing objects.
+- Practised `__len__()` and `__eq__()`.
 
-Intentionally Postponed
+### Practical Work
 
-Advanced special methods, including __add__().
+- Independently created a `Student` class.
+- Used `__init__()` to initialize instance data.
+- Created an instance method named `introduce()`.
+- Created an object and called its method.
+- Identified an improvement: store the student's age as an instance attribute rather than hardcoding it.
 
-Exhaustive exploration of Python's dunder methods.
+### Intentionally Postponed
+
+- Advanced special methods, including `__add__()`.
+- Exhaustive exploration of Python's special methods.
 
 These topics can be revisited when a real project requires them.
 
-Next Development Priorities
+## 9. Beginner Projects
+
+**Status:** Completed beginner projects; continuing development practice.
+
+Projects completed:
+- File Organizer.
+- Expense Report Tracker.
+
+Project in development:
+- Finance Manager CLI application.
+
+Areas practised through projects:
+- User input and menu-driven programs.
+- Lists and dictionaries for storing information.
+- Functions and conditional statements.
+- Exception handling.
+- File handling.
+- Organizing code and working with Git.
+
+The goal is to build projects independently and understand why each component is needed, rather than simply following tutorials.
+
+## 10. Current Development Priorities
 
 Focus on applying Python fundamentals and OOP in practical work, then progress toward:
 
-SQL and databases.
+1. Strengthening Python fundamentals through independent practice.
+2. Improving OOP through practical implementation.
+3. Continuing development of the Finance Manager project.
+4. Learning SQL and databases.
+5. Learning backend development with FastAPI.
+6. Practising automated testing.
+7. Improving Git and GitHub workflow.
+8. Continuing Data Structures and Algorithms (DSA) practice alongside development.
 
-Backend development with FastAPI.
+## Overall Assessment
 
-Automated testing.
+The foundational Python topics have been practised, and OOP concepts have been introduced and explored.
 
-Building and improving a practical project.
+The next goal is to apply these concepts independently in practical applications, reinforce weaker areas, and gradually develop production-oriented programming habits.
 
-Git and GitHub workflow.
-
-DSA practice alongside development.
+Progress should be recorded honestly: a topic being introduced or practised does not necessarily mean it has been mastered.
